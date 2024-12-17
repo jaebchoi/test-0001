@@ -6,7 +6,7 @@ dependencies:
   repository: oci://ghcr.io/boozallen
   version: 1.11.0-SNAPSHOT
 - name: aissemble-hive-metastore-service-chart
-  repository: oci://ghcr.io/jaebchoi
+  repository: file://../aissemble-hive-metastore-service-chart/
   version: 1.11.0-SNAPSHOT
-digest: sha256:564c59f89ed29184bf39f271b831a854be798e36fe16555f1c02f358381bae0f
-generated: "2024-12-17T15:34:08.841569-05:00"
+digest: sha256:ba3c0178e0c55911bb08991a9aae60f85ff16efde7d366791076b390ae5e5466
+generated: "2024-12-17T16:13:10.436892-05:00"

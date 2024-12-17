@@ -2,9 +2,9 @@ apiVersion: v2
 name: aissemble-hive-metastore-service-chart
 description: A Helm chart for hive-metastore-service
 # Version is automatically set by the plugin so this is only a placeholder
-version: 1.0.0
+version: 1.11.0-SNAPSHOT
 # App Version is automatically set by the plugin so this is only a placeholder
-appVersion: 1.0.0
+appVersion: 1.11.0-SNAPSHOT
 sources:
   - https://github.com/boozallen/aissemble
 
