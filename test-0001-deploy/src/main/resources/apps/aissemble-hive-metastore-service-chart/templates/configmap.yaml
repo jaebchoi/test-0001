@@ -11,7 +11,7 @@ metadata:
         f:data:
           f:metastore-site.xml: {}
       manager: argocd-controller
-      operation: Update
+      operation: Apply
 data:
   # Add all the default properties from the local values.yaml to the ConfigMap
   # Then check if there are any downstream properties and add them as well
