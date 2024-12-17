@@ -38,4 +38,3 @@ dependencies:
   - name: aissemble-hive-metastore-service-chart
     version: 1.11.0-SNAPSHOT
     repository: oci://ghcr.io/jaebchoi
-

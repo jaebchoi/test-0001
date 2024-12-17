@@ -9,4 +9,4 @@ dependencies:
   repository: oci://ghcr.io/jaebchoi
   version: 1.11.0-SNAPSHOT
 digest: sha256:564c59f89ed29184bf39f271b831a854be798e36fe16555f1c02f358381bae0f
-generated: "2024-12-17T13:42:17.46257-05:00"
+generated: "2024-12-17T15:34:08.841569-05:00"
