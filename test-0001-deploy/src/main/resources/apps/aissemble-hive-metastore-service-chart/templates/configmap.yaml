@@ -10,7 +10,7 @@ metadata:
       fieldsV1:
         f:data:
           f:metastore-site.xml: {}
-      manager: kubectl
+      manager: argocd-controller
       operation: Update
 data:
   # Add all the default properties from the local values.yaml to the ConfigMap
