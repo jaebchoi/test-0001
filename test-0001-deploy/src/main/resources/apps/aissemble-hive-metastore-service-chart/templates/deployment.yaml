@@ -82,7 +82,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       ignoreDifferences:
-        - group: "*"
-          kind: "*"
-          managedFieldsManagers:
-            - argocd-controller
+        - group: apps
+          kind: configMaps
+          jsonPointers:
+          - /data/metastore-site.xml
