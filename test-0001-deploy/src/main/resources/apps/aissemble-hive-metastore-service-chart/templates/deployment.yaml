@@ -15,7 +15,7 @@ spec:
   strategy: {}
   ignoreDifferences:
     - group: apps
-      kind: configMap
+      kind: ConfigMap
       jsonPointers:
         - /data/metastore-site.xml
   template:
