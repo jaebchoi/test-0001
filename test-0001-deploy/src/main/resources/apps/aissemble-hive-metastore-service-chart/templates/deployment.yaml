@@ -13,11 +13,6 @@ spec:
       app.kubernetes.io/instance: {{ .Values.app.name | default .Chart.Name }}
       app.kubernetes.io/name: {{ .Values.app.name | default .Chart.Name }}
   strategy: {}
-  ignoreDifferences:
-    - group: apps
-      kind: ConfigMap
-      jsonPointers:
-        - /data
   template:
     metadata:
       labels:
