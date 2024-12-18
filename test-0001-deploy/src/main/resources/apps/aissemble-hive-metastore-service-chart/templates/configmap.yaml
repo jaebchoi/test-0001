@@ -4,6 +4,14 @@ metadata:
   name: metastore-service-config
   labels:
     aissemble-configuration-store: {{ .Values.configMap.configStore}}
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          f:metastore-site.xml: {}
+      manager: argocd-controller
+      operation: Apply
 data:
   # Add all the default properties from the local values.yaml to the ConfigMap
   # Then check if there are any downstream properties and add them as well
