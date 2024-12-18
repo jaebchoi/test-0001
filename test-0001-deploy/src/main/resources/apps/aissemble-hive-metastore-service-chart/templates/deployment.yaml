@@ -13,6 +13,11 @@ spec:
       app.kubernetes.io/instance: {{ .Values.app.name | default .Chart.Name }}
       app.kubernetes.io/name: {{ .Values.app.name | default .Chart.Name }}
   strategy: {}
+  ignoreDifferences:
+    - group: apps
+      kind: configMap
+      jsonPointers:
+        - /data/metastore-site.xml
   template:
     metadata:
       labels:
@@ -81,8 +86,3 @@ spec:
       securityContext:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      ignoreDifferences:
-        - group: apps
-          kind: configMaps
-          jsonPointers:
-          - /data/metastore-site.xml
