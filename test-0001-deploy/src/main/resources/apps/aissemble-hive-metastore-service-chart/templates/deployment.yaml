@@ -17,7 +17,7 @@ spec:
     - group: apps
       kind: ConfigMap
       jsonPointers:
-        - /data/metastore-site.xml
+        - /data
   template:
     metadata:
       labels:
