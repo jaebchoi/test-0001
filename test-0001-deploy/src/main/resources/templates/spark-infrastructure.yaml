@@ -10,6 +10,10 @@ spec:
     - group: apps
       kind: ConfigMap
       jsonPointers:
+        - /data/metastore-site.xml
+    - group: argoproj.io
+      kind: ConfigMap
+      jsonPointers:
         - /data
   destination:
     namespace: test-0001
