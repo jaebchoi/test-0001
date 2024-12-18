@@ -7,14 +7,14 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   ignoreDifferences:
-    - group: apps
-      kind: ConfigMap
+    - group: "*"
+      kind: "ConfigMap"
       jsonPointers:
         - /data/metastore-site.xml
-    - group: argoproj.io
-      kind: ConfigMap
-      jsonPointers:
-        - /data
+    - group: "*"
+      kind: "*"
+      managedFieldsManagers:
+        - argocd-controller
   destination:
     namespace: test-0001
     server: {{ .Values.spec.destination.server }}
