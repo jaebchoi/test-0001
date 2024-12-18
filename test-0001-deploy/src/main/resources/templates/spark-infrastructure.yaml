@@ -8,10 +8,6 @@ metadata:
 spec:
   ignoreDifferences:
     - group: "*"
-      kind: "ConfigMap"
-      jsonPointers:
-        - /data/metastore-site.xml
-    - group: "*"
       kind: "*"
       managedFieldsManagers:
         - argocd-controller
